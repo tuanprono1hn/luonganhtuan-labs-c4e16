@@ -1,0 +1,24 @@
+- Why should we use functions at all?
+	A function is a block of organized, reusable code that is used to perform a single, related action. We can call it when we want to use it, need not to code again.
+- How to define/declare a function?
+	def name_of_function(arguments/parameters):
+		statements
+- How to call/use a function?
+	name_of_function(arguments/parameters)
+- What is return, why and how do we use it?
+	The return statement is used to escape the function definition and take the result of function.
+	Everything in a funcion can't be used out of function so we have to take what we need to use outta function.
+	To use it, we need a variable to assign a result returned: res = return(result)
+- Do we have to use return in every function?
+	No, we don't
+- What are function arguments/parameters, why and how we use it?
+	The first type of data is the data that is passed in the function call. This data is called an argument. Arguments can be constants, variables or expressions.
+	The second type of data is the data received in the function definition. This data is called a parameter. Parameters must be variables to keep values coming.
+	All parameters/arguments in the Python language are passed by reference. It means if you change what a parameter refers to within a function, the change also reflects back in the calling function.
+	Ex: def name_of_function(x, y):
+		z = x + y
+		print(z)
+		return z
+	    name_of_function(5, 6)
+- How to use function from a different file other than our currently working file?
+	from file_name import name_of_function:
